@@ -1,0 +1,299 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(photo/Profile.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+nav h2{
+    color: #7daff0;
+    font-size: 30px;
+    cursor: pointer;
+}
+nav a{
+        color: #20b2aa;
+}
+.nav-menu{
+    flex: 1;
+    text-align: right;
+}
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0px 12px;
+}
+.nav-menu ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        transition: all .4s ease;
+}
+.nav-menu ul li::after{
+    content: '';
+    width: 15px;
+    height: 2px;
+    background: #20b2aa;
+    display: none;
+    margin: auto;
+    position: absolute;
+    bottom: -4px;
+    transition: all .4s ease;
+}
+.nav-menu ul li:hover::after{
+    width: 100%;
+    display: block;
+}
+.nav-menu ul li a:hover{
+            color: #20b2aa;
+}
+.content a{
+    position: absolute;
+    color: white;
+    background: #20b2aa;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+    cursor: pointer;
+}
+.content a:hover{
+        transform: scale(1.1);
+}
+.content{
+    margin: 15% 8%;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.content span{
+        color: #20b2aa;
+}
+.content h2{
+    font-size: 50px;
+}
+nav span{
+    display: none;
+}
+@media(max-width:700px){
+            .content{
+                margin-top: 35%;
+            }
+            .content a:hover{
+                transform: scale(1.1);
+        }
+        nav span{
+            display: block;
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .nav-menu{
+            position: absolute;
+            background: rgb(0,0,0,0.2);
+            height: 100vh;
+            width: 300px;
+            top: 0;
+            right: -300px;
+            text-align: left;
+            z-index: 1;
+            transition: 1s; 
+        }
+        .nav-menu ul li{
+            display: block;
+            margin: 10px 0;
+        }
+        .nav-menu ul{
+            padding: 10px 20px;
+        }
+        .nav ul li a{
+            margin: 20px;
+        }
+}
+/* About Me */
+.About{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.About h2{
+        text-decoration: underline;
+        font-size: 30px;
+        color: #20b2aa;
+        cursor: pointer;
+}
+.about-me-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+.about-me-col img{
+       width: 60%;
+    border-radius: 50%;
+}
+.about-me-col h3{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: left;
+        font-size: 22px;
+        cursor: pointer;
+}
+.about-me-col p{
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: left;
+            cursor: pointer;
+                
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+@media(max-width:700px){
+    .about-me-col h3{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: left;
+        font-size: 22px;
+} 
+.row{
+    display: block;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+}
+/* Skills&Education */
+.skills-education{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+}
+.skills-education h2{
+    text-align: center;
+    text-decoration: underline;
+    color: #20b2aa;
+    font-size: 30px;
+    cursor: pointer;
+}
+.skill-education-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    background: #f7e5f6;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    transition: all.5s;
+}
+.skill-education-col h3{
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.Social-link i{
+    font-size: 40px;
+   margin-top: 8px;
+}
+.Social-link b{
+    cursor: pointer;
+}
+.skill-education-col:hover{
+    box-shadow: 0 0 20px 0;
+}
+.skill-education-col li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.skill-education-col .bar{
+    display: block;
+    height: 3px;
+    border: 1px solid rgb(0,0,0,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.skill-education-col .bar span{
+        height: 20px;
+        float: left;
+        background: #20b2aa;
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.css{
+    width: 85%;
+    animation: css 2s;
+}
+.javascript{
+    width: 60%;
+    animation: javascript 2s;
+}
+.Photoshop-Illustrator{
+    width: 60%;
+    animation: Photoshop-Illustrator 2s;
+}
+.jquery{
+    width: 75%;
+    animation: jquery 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes Photoshop-Illustrator {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes jquery {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
