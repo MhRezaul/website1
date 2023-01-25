@@ -41,7 +41,7 @@
                 <h3><span>Hello,</span> Everyone.</h3>
                 <h2><span>Rezaul</span></h2>
                <h3>I'm a <span>Web Developer.</span></h3>
-                <a href="#contact" class="btn">Follow me</a>
+                <a href="#footer" class="btn">Follow me</a>
             </div>
         </section>
 
@@ -55,135 +55,200 @@
             <h1 class="heading"><span>about</span> me</h1>
 
             <div class="row">
-                <div class="about-me-col">
-                    <img src="photo/Baner.jpg">
+                <div class="table">
+                    <img src="photo/Jhony1.jpg">
                 </div>
-                <div class="about-me-col">
-                    <h3>Hello, I'm Rezaul.</h3><br>
-                    <p>Over the past years, I created 100s of websites for my clients. I pride myself on doing quality work and maintain excellent communication. Most of the time I work with WordPress but some technologies I enjoy working with include HTML5, CSS3 as well as PSD.</p>
+
+                <div class="table">
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('about')">About</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="about">
+                        <h3>Hello, I'm Rezaul.</h3><br>
+                        <p>Over the past years, I created 100s of websites for my clients. I pride myself on doing quality work and maintain excellent communication. Most of the time I work with WordPress but some technologies I enjoy working with include HTML5, CSS3 as well as PSD.</p>
+                    </div>
+ 
+                    <div class="tab-contents" id="skills">
+                     <h3>SKILLS :</h3>
+                        <ul>
+                            <li>
+                                <h4>HTML</h4> <span class="bar"> <span class="html"> </span> </span>
+                            </li>
+                            <li>
+                                <h4>CSS</h4> <span class="bar"> <span class="css"> </span> </span> 
+                            </li>
+                            <li>
+                                <h4>JAVASCRIPT</h4> <span class="bar"> <span class="javascript"> </span> </span>
+                            </li>
+                            <li>
+                                <h4>PHOTOSHOP & ILLUSTRATOR</h4> <span class="bar"> <span class="Photoshop-Illustrator"> </span> </span>
+                            </li>
+                            <li>
+                                <h4>JQUERY</h4> <span class="bar"> <span class="jquery"> </span> </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                     <h3>EDUCATION :</h3>
+                        <div class="Social-link">
+                            <i class="fa-solid fa-book"></i><br>
+                            <b>2022-2025</b><br>
+                            <b>Diploma : Information and Communication Technology.</b> <br>
+                            <i class="fa-solid fa-book-open"></i><br>
+                            <b>2021-2022</b><br>
+                            <b>S.S.C : Business studies.</b>
+                        </div>
+                    </div>
+                       
+
                 </div>
             </div> 
         </section>
      </div>   
 
         <!-- about section end -->
-            <!-- Skills&Education -->
-        <div class="skills-education">
-            <h2>Skills & Education</h2>
-            <div class="row">
-                <div class="skill-education-col">
-                    <h3>EDUCATION :</h3>
-                    <div class="Social-link">
-                        <i class="fa-solid fa-book"></i><br>
-                        <b>2022-2025</b><br>
-                        <b>Diploma : Information and Communication Technology.</b> <br>
-                        <i class="fa-solid fa-book-open"></i><br>
-                        <b>2021-2022</b><br>
-                        <b>S.S.C : Business studies.</b>
-                    </div>
-                </div>
-                <div class="skill-education-col">
-                    <h3>SKILLS :</h3>
-                    <ul>
-                        <li>
-                           <h3>HTML</h3> <span class="bar"> <span class="html"> </span> </span>
-                        </li>
-                        <li>
-                            <h3>CSS</h3> <span class="bar"> <span class="css"> </span> </span> 
-                        </li>
-                        <li>
-                            <h3>JAVASCRIPT</h3> <span class="bar"> <span class="javascript"> </span> </span>
-                        </li>
-                        <li>
-                            <h3>PHOTOSHOP & ILLUSTRATOR</h3> <span class="bar"> <span class="Photoshop-Illustrator"> </span> </span>
-                        </li>
-                        <li>
-                            <h3>JQUERY</h3> <span class="bar"> <span class="jquery"> </span> </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
         <!-- Services -->
-        <div class="service">
-            <h2>Services</h2>
-            <h3>What I will do for you?</h3>
-            <div class="row">
-                <div class="services-col">
-                    <b><i class="fa-brands fa-html5"></i></b>
-                    <h3>PSD TO HTML5</h3>
-                    <p>I will convert your PSD to HTML5 with Latest Bootstrap. It will be fully responsive. Pixel-perfect code and fresh hand code are my power. If you have any design or idea I can make it a website.</p>
+
+        <section class="services" id="services">
+            <div class="main-text">
+                <h1 class="heading">My <span>Services</span></h1>
+                <h3>What I will do for you?</h3>
+            </div>
+            
+            <div class="services-content">
+                <div class="box">
+                    <div class="s-icon">
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem nisi      rerum, quos soluta ex. Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="read">Read More</a>
                 </div>
-                <div class="services-col">
-                    <b><i class="fa-solid fa-laptop-code"></i></b>
-                    <h3>FRONT-END DEVELOPER</h3>
-                    <p>I’m a Front End Web developer who is passionate about making error-free websites with 100% client satisfaction.</p>
+
+                <div class="box">
+                    <div class="s-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Web development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem nisi      rerum, quos soluta ex. Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="read">Read More</a>
                 </div>
-                <div class="services-col">
-                    <b><i class="fa-brands fa-wordpress"></i></b>
-                    <h3>WORDPRESS DEVELOPER</h3>
-                    <p>I love to develop WordPress websites. I developed more than 300 WordPress websites. It’s fun to create a WordPress website and you will be able to control the complete website from the admin panel.</p>
+
+                <div class="box">
+                    <div class="s-icon">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <h3>Creavite Design</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem nisi      rerum, quos soluta ex. Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="read">Read More</a>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Portfolio -->
-        <div class="portfolio">
-            <h2>Portfolio</h2>
-            <h3>Latest Projects</h3>
-            <div class="row">
-                <div class="portfolio-col">
-                    <img src="photo/Food.jpeg">
-                    <h2>html and css</h2>
-                    <div class="overflo">
-                    <a href="https://foodworldbd.netlify.app"><h3><dfn title="Click here to open website">FoodWorld</dfn></h3></a>
-                    </div>
-                </div>
-                <div class="portfolio-col">
-                    <img src="photo/free-image-stocksnap.png">
-                    <h2>html and css</h2>
-                    <div class="overflo">
-                        <h3>html & css</h3>
-                    </div>
-                </div>
-                <div class="portfolio-col">
-                    <img src="photo/free-stock-pictures-website-rawpixel.jpg">
-                    <h2>html and css</h2>
-                    <div class="overflo">
-                        <h3>html & css</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <section class="portfolio" id="portfolio">
 
-        <!-- Testimonial -->
-        <div class="testimonial">
-            <h2>Testimonial</h2>
-            <h3>What Clients Say</h3>
-            <div class="row">
-                <div class="testimonial-col">
-                    <p>Very experienced and super fast. Weren’t able to get one thing done but not his fault. I will definitely use him again. Very nice guy!</p>
-                    <div class="img2">
-                    <img src="photo/images.jpg">
-                    <h3>rosbron Manager</h3>
+                <h1 class="heading">My <span>Portfolio</span></h1>
+
+            <div class="box-container">
+
+                 <!-- 1 -->
+                 <div class="box1">
+                    <img src="photo/FoodWorld.jpeg">
+                    <h2>Food World</h2>
+                    <div class="overflo">
+                        <a href="#" class="fas fa-link"></a>
+                        <a href="#" class="fas fa-share"></a>
+                        <a href="https://bdfoodworld.netlify.app/#home" class="fas fa-search"></a>
                     </div>
+                 </div>
+
+                 <!-- 2 -->
+                 <div class="box1">
+                    <img src="photo/2.jpg">
+                    <h2>html and css</h2>
+                    <div class="overflo">
+                        <a href="#" class="fas fa-link"></a>
+                        <a href="#" class="fas fa-share"></a>
+                        <a href="#" class="fas fa-search"></a>
+                    </div>
+                 </div>
+
+                 <!-- 3 -->
+                 <div class="box1">
+                    <img src="photo/2.png">
+                    <h2>html and css</h2>
+                    <div class="overflo">
+                        <a href="#" class="fas fa-link"></a>
+                        <a href="#" class="fas fa-share"></a>
+                        <a href="#" class="fas fa-search"></a>
+                    </div>
+                 </div>
+
+                 <!-- 4 -->
+                 <div class="box1">
+                    <img src="photo/3.jpg">
+                    <h2>html and css</h2>
+                    <div class="overflo">
+                        <a href="#" class="fas fa-link"></a>
+                        <a href="#" class="fas fa-share"></a>
+                        <a href="#" class="fas fa-search"></a>
+                    </div>
+                 </div>
+
+                 <!-- 5 -->
+                 <div class="box1">
+                    <img src="photo/4.jpg">
+                    <h2>html and css</h2>
+                    <div class="overflo">
+                        <a href="#" class="fas fa-link"></a>
+                        <a href="#" class="fas fa-share"></a>
+                        <a href="#" class="fas fa-search"></a>
+                    </div>
+                 </div>
+
+                 <!-- 6 -->
+                 <div class="box1">
+                    <img src="photo/5.jpg">
+                    <h2>html and css</h2>
+                    <div class="overflo">
+                        <a href="#" class="fas fa-link"></a>
+                        <a href="#" class="fas fa-share"></a>
+                        <a href="#" class="fas fa-search"></a>
+                    </div>
+                 </div>
+                
+            </div>
+        </section>
+
+        <!-- review -->
+        <section class="review" id="review">
+                           
+            <h1 class="heading"> Completed 600+ Projects<span><br> Successfully</span> </h1>
+
+            <div class="cta-box">
+                <div class="wrap one">
+                    <h3>600+</h3>
+                    <p>Finished Projects</p>
                 </div>
-                <div class="testimonial-col">
-                    <p>Great experience, highly recommend. Worked through all my questions with me and was very timely in his responsiveness.</p>
-                    <div class="img2">
-                    <img src="photo/images (2).jpg">
-                    <h3>mdevbostan Businessman</h3>
-                    </div>
+
+                <div class="wrap two">
+                    <h3>150+</h3>
+                    <p>Happy Customers</p>
                 </div>
-                <div class="testimonial-col">
-                    <p>He was excellent to work with, and he did a great job fixing osme issues that we had.</p>
-                    <div class="img2">
-                    <img src="photo/download.jpg">
-                    <h3>ranledhall Manager</h3>
-                    </div>
+
+                <div class="wrap three">
+                    <h3>300+</h3>
+                    <p>Global Customers</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- contact section starts -->
 
@@ -196,21 +261,14 @@
                     <img src="photo/Jhony1.jpg" alt="">
                 </div>
 
-                <form action="">
-
-                    <div class="inputBox">
-                        <input type="text" placeholder="name">
-                        <input type="email" placeholder="email">
+                <form action="https://formspree.io/f/xyyazrrw" method="POST">
+                    <div class="input">
+                        <input type="text" name="Name" placeholder="name" required>
+                        <input type="email" name="email" placeholder="email" required>
                     </div>
+                    <textarea  placeholder="Your Message" name="Message" cols="30" rows="10"></textarea>
 
-                    <div class="inputBox">
-                        <input type="number" placeholder="number">
-                        <input type="text" placeholder="address">
-                    </div>
-
-                    <textarea  placeholder="subject" name="" id="" cols="30" rows="10"></textarea>
-
-                    <input type="submit" value="contact now" class="btn">
+                    <button type="submit" class="btn">Send</button>
 
                 </form>
 
@@ -220,22 +278,22 @@
 
         <!-- contact section ends -->
 
-        <!-- FIND WITH ME -->
-        <div class="find-me">
-            <h2>FIND WITH ME</h2>
-            <div class="find-col">
-                <div class="footer">
-                    <a href="https://www.facebook.com/profile.php?id=100072692455992&sk=about_contact_and_basic_info"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.linkedin.com/in/md-jhony-337337260/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/MhRezaul"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.youtube.com/@The_WebReza"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://t.me/Rezaul017"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-                <div id="text">
-                    <h2>© Copyright 2015 - 2022 | Muhammad Rezaul</h2>
-                </div>
+        <!-- footer section -->
+
+        <section class="footer" id="footer">
+
+            <h1 class="heading"> <span>Follow</span> Me </h1>
+
+            <div class="share">
+                <a href="https://www.facebook.com/profile.php?id=100072692455992" class="btn">facebook</a>
+                <a href="https://github.com/MhRezaul" class="btn">github</a>
+                <a href="https://www.linkedin.com/in/mh-rezaul-337337260/" class="btn">linkedin</a>
+                <a href="#" class="btn">instagram</a>
             </div>
-        </div>
+
+            <h1 class="credit"><i class="fa-regular fa-copyright"></i> Copyright 2017 - 2023  | The<span>Web</span>Reza </h1>
+
+        </section>
 
 
     <!-- script.js file link -->

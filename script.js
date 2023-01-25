@@ -6,21 +6,16 @@ menu.onclick = () =>{
     navbar.classList.toggle('active');
 }
 
-window.onscroll = () =>{
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
 
-    if(window.scrollY > 60){
-        document.querySelector('#scroll-top').classList.add('active');
-    }else{
-        document.querySelector('#scroll-top').classList.remove('active');
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
     }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
 }
-
-function loader(){
-    document.querySelector('.loader-container').classList.add('fade-out');
-}
-function fadeOut(){
-    setInterval(loader, 3000);
-}
-window.onload = fadeOut();

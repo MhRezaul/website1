@@ -6,7 +6,6 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -36,7 +35,8 @@ section{
     text-align: center;
     font-size: 3.5rem;
     padding: 1rem;
-    color: #666;
+    color: #fff;
+    cursor: pointer;
 }
 .heading span{
     color: #20b2aa;
@@ -95,6 +95,7 @@ header .navbar a{
     font-size: 1.5rem;
     margin-left: 2rem;
     color: #fff;
+    text-transform: capitalize;
 }
 
 header .navbar a:hover{
@@ -148,30 +149,33 @@ header .navbar a:hover{
 
 
 .about{
-    width: 80%;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    text-align: center;
     margin: auto;
+    text-align: center;
 }
 .bac{
-    background: #333;
+    background: #000;
 }
 .about h1{
     color: #fff;
-    cursor: pointer;
+    text-transform: capitalize;
+
 }
-.about-me-col{
-    flex-basis: 45%;
-    border-radius: 10px;
-    margin-bottom: 4%;
+.about .table{
+    flex: 1 1 30rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
 }
-.about-me-col img{
-    width: 70%;
-    border-radius: 50%;
-    margin-top: 2.5rem;
+.about .table img{
+    width: 60%;
+    border-radius: .5rem;
 }
-.about-me-col h3{
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.tab-contents h3{
     margin-top: 20px;
     margin-bottom: 0px;
     text-align: left;
@@ -179,77 +183,94 @@ header .navbar a:hover{
     cursor: pointer;
     color: #20b2aa;
 }
-.about-me-col p{
+.tab-contents p{
     font-size: 1.5rem;
     text-align: left;
     cursor: pointer;
     color: #fff;
-                
+    font-weight: 600;               
 }
+
 .row{
     display: flex;
     justify-content: space-between;
 }
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #20b2aa;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+
 
 @media(max-width:768px){
     .about .row{
         display: grid;
     }
 }
-/* Skills&Education */
+
 .skills-education{
         width: 80%;
         margin: auto;
         text-align: center;
         padding-top: 100px;
 }
-.skills-education h2{
-    text-align: center;
-    text-decoration: underline;
-    color: #20b2aa;
-    font-size: 30px;
-    cursor: pointer;
-}
-.skill-education-col{
-    flex-basis: 45%;
-    border-radius: 10px;
-    margin-bottom: 4%;
-    background: #f7e5f6;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    margin-top: 10px;
+.tab-contents{
     transition: all.5s;
 }
-.skill-education-col h3{
+.tab-contents h4{
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-top: 10px;
     cursor: pointer;
+    color: #fff;
 }
 .Social-link i{
-    font-size: 40px;
+    font-size: 45px;
    margin-top: 8px;
    color: #20b2aa;
 }
 .Social-link b{
     cursor: pointer;
+    color: #fff;
+    font-size: 15px;
 }
-.skill-education-col:hover{
+.tab-contents:hover{
     box-shadow: 0 0 20px 0;
 }
-.skill-education-col li{
+.tab-contents li{
     list-style: none;
     font-size: 12px;
     font-weight: bold;
 }
-.skill-education-col .bar{
+.tab-contents .bar{
     display: block;
     height: 3px;
-    border: 1px solid rgb(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     overflow: hidden;
 }
-.skill-education-col .bar span{
+.tab-contents .bar span{
         height: 20px;
         float: left;
         background: #20b2aa;
@@ -314,168 +335,168 @@ header .navbar a:hover{
         width: 75%;
     }
 }
-/* services */
-.service{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-.service h2{
-    cursor: pointer;
-    color: #20b2aa;
-    text-decoration: underline;
-    font-size: 30px;
-}
-.service h3{
-    cursor: pointer;
-}
-.services-col{
-    flex-basis: 30%;
-    border-radius: 10px;
-    margin-bottom: 4%;
-    background: #f7e5f6;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    transition: all.5s;
-}
-.services-col p{
-    text-align: center;
-    line-height: 20px;
-    cursor: pointer;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-}
-.services-col:hover{
-    box-shadow: 0 0 20px 0;
-}
-.services-col b{
-    font-size: 40px;
-    color: #20b2aa;
-}
 
-/* portfolio */
-.portfolio{
-    width: 80%;
-    margin: auto;
+.services{
+    background: #000;
+}
+.main-text{
     text-align: center;
-    padding-top: 100px;
 }
-.portfolio h2{
-    cursor: pointer;
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box{
+    background: #333;
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.s-icon i{
+    font-size: 34px;
+    margin-bottom: 20px;
     color: #20b2aa;
-    text-decoration: underline;
-    font-size: 30px;
 }
-.portfolio h3{
-    cursor: pointer;
+.box h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
 }
-.portfolio-col{
-    flex-basis: 30%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    background: #f7e5f6;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    transition: all.5s;
+.box p{
+    color: rgb(171, 173, 174);
+    margin-bottom: 15px;
+    line-height: 1.5rem;
 }
-.portfolio-col:hover{
-    box-shadow: 0 0 20px 0;
-}
-.portfolio-col img{
-    width: 100%;
-    display: block;
-}
-.portfolio-col h2{
-    text-decoration: none;
-    font-size: 22px;
-}
-.overflo{
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 1s;
-}
-.overflo:hover{
-    background: rgba(225,0,0,0.5);
-}
-.overflo h3{
-    width: 100%; 
-    color: white;
+.read{
+    display: inline-block;
+    padding: 8px 18px;
+    background: #181b1a;
+    color: #20b2aa;
+    font-size: 14px;
     font-weight: 500;
-    font-size: 22px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 1s;
-    font-weight: bold;
+    border-radius: 8px;
+    transition: all .45s ease;
+    border: 2px solid #20b2aa;
 }
-.overflo:hover h3{
-    bottom: 49%;
-    opacity: 1;
+
+.read:hover{
+    background: #20b2aa;
+    color: #fff;
 }
-/* testimonial */
-.testimonial{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-.testimonial h2{
+.box:hover{
     cursor: pointer;
-    color: #20b2aa;
-    text-decoration: underline;
-    font-size: 30px;
+    transform: translateY(-5px);
 }
-.testimonial h3{
-    cursor: pointer;
+
+
+.portfolio{
+    background: #000;
 }
-.testimonial-col{
-    flex-basis: 30%;
-    border-radius: 10px;
-    margin-bottom: 30px;
+.portfolio .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.portfolio .box-container .box1{
+    flex: 1 1 20rem;
+    height: 25rem;
     position: relative;
     overflow: hidden;
-    background: #f7e5f6;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    transition: all.5s;
+    border: .5rem solid #fff;
+    background: #20b2aa;
+    box-shadow: 0 .5rem 1rem rgba(122, 123, 124, 0.942);
+    border-radius: .5rem;
 }
-.testimonial-col:hover{
-    box-shadow: 0 0 20px 0;
+.portfolio .box-container .box1 img{
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    z-index: 1;
 }
-.img2 img{
-    width: 100px;
-    border-radius: 20px;
-    margin-top: 10px;
+.portfolio .box-container .box1:hover img{
+    height: 75%;
+    width: 75%;
+    border-radius: 0 0 .5rem 0;
 }
-.testimonial-col p{
+.portfolio .box-container .box1 h2{
+    position: absolute;
+    bottom: 1rem; left: 1rem;
+    font-size: 2.5rem;
+    color: #000;
+}
+.portfolio .box-container .box1 .overflo{
+    position: absolute;
+    top: 1rem; right: 1rem;
+}
+.portfolio .box-container .box1 .overflo a{
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    border-radius: .5rem;
+    background: rgb(171, 213, 245);
+    color: #333;
+    font-size: 1.7rem;
+    line-height: 4rem;
     text-align: center;
-    line-height: 20px;
+    margin-bottom: 1rem;
+}
+.portfolio .box-container .box1 .overflo a:hover{
+    background: #fff;
+    color: #20b2aa;
+}
+
+
+
+.review{
+    background: #000;
+}
+.cta-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+}
+.wrap{
+    background: #fff;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+    border-radius: 12px;
+    padding: 50px 50px 50px 50px;
+    transition: ease .40s;
     cursor: pointer;
 }
-
-
+.one{
+    background: #baebcd;
+}
+.two{
+    background: #d9d1fa;
+}
+.three{
+    background: #faedce;
+}
+.wrap h3{
+    color: #20b2aa;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.wrap p{
+    font-size: 18px;
+}
 
 
 .contact{
-    background: #333;
+    background: #000;
 }
 .contact h1{
     color: #fff;
+    text-transform: capitalize;
 }
 .contact .row{
     pad: 2rem;
@@ -498,20 +519,15 @@ header .navbar a:hover{
     padding: 1rem;
     margin-top: 2rem;
 }
-.contact .row form .inputBox{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.contact .row form .inputBox input, .order .row form textarea{
+.contact .row form .input input, .order .row form textarea{
     padding: 1rem;
     margin: 1rem 0;
     font-size: 1.7rem;
     color: #333;
-    text-transform: none;
-    border: .1rem solid rgba(0, 0, 0, .3);
+    outline: none;
+    border: 0;
     border-radius: .5rem;
-    width: 49%;
+    width: 100%;
 }
 .contact .row form textarea{
     width: 100%;
@@ -526,48 +542,27 @@ header .navbar a:hover{
 }
 
 
-
-
-
-/* FIND WITH ME */
-.find-me{
-        width: 100%;
-        text-align: center;
-        background: #f7e5f6;
-        margin-top: 70px;
-        text-align: center;
-        padding-bottom: 10px;
-        padding-top: 50px;
+.footer{
+    background: #000;
+    text-align: center;
 }
-.find-me h2{
-        color: #20b2aa;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        cursor: pointer;
+.footer .share{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.footer a{
-        font-size: 15px;
-        color: black;
-        text-decoration: none;
-        padding: 15px;
-        background-color: white;
-        border-radius: 100%;
-        margin: 10px;
-        transition: all .5s;
+.footer .credit{
+    padding: 2.5rem 1rem;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2rem;
 }
-.footer a:hover{
-        background: #20b2aa;
-        color: white;
+.footer .credit span{
+    color: #20b2aa;
 }
-@media(max-width:950px){
-    .find-me h2{
-        font-size: 18px;
-        padding: 30px;
-    }
-    .footer a{
-        padding: 12px;
-        
-    }
+.footer .credit i{
+    color: #20b2aa;
 }
 
 
