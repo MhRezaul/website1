@@ -84,7 +84,7 @@ header{
 header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
-    color: #7daff0;
+    color: white;
 }
 
 header .logo span{
@@ -128,9 +128,9 @@ header .navbar a:hover{
     padding: 3rem;
 }
 .home .content h2{
-    font-size:27px;
+    font-size:20px;
     color: #fff;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .home .content h3{
     font-size:27px;
@@ -336,61 +336,6 @@ header .navbar a:hover{
     }
 }
 
-.services{
-    background: #000;
-}
-.main-text{
-    text-align: center;
-}
-.services-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 5rem;
-}
-.box{
-    background: #333;
-    padding: 35px 45px;
-    border-radius: 8px;
-    transition: all .45s ease;
-}
-.s-icon i{
-    font-size: 34px;
-    margin-bottom: 20px;
-    color: #20b2aa;
-}
-.box h3{
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 15px;
-}
-.box p{
-    color: rgb(171, 173, 174);
-    margin-bottom: 15px;
-    line-height: 1.5rem;
-}
-.read{
-    display: inline-block;
-    padding: 8px 18px;
-    background: #181b1a;
-    color: #20b2aa;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-    transition: all .45s ease;
-    border: 2px solid #20b2aa;
-}
-
-.read:hover{
-    background: #20b2aa;
-    color: #fff;
-}
-.box:hover{
-    cursor: pointer;
-    transform: translateY(-5px);
-}
 
 
 .portfolio{
@@ -399,57 +344,50 @@ header .navbar a:hover{
 .portfolio .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
+}
+.portfolio .box-container .box2{
+    display: inline-block;
+    flex: 1 1 20rem;
+    height: 35rem;
+}
+.portfolio .box-container .box2 img{
+    height: 100%;
+    width: 100%;
+    transition: transform .5s;
+    border: .5rem solid #fff;
+    border-radius: .5rem;
+}
+.portfolio .box-container .box2:hover img{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+
+
+.portfolio{
+    background: #000;
+}
+.portfolio .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .portfolio .box-container .box1{
-    flex: 1 1 20rem;
-    height: 25rem;
-    position: relative;
-    overflow: hidden;
-    border: .5rem solid #fff;
-    background: #20b2aa;
-    box-shadow: 0 .5rem 1rem rgba(122, 123, 124, 0.942);
-    border-radius: .5rem;
+    display: inline-block;
+    flex: 1 1 30rem;
 }
 .portfolio .box-container .box1 img{
     height: 100%;
     width: 100%;
-
-    position: relative;
-    z-index: 1;
+    transition: transform .5s;
+    border: .5rem solid #fff;
+    border-radius: .5rem;
 }
 .portfolio .box-container .box1:hover img{
-    height: 75%;
-    width: 75%;
-    border-radius: 0 0 .5rem 0;
+    cursor: pointer;
+    transform: scale(0.9);
 }
-.portfolio .box-container .box1 h2{
-    position: absolute;
-    bottom: 1rem; left: 1rem;
-    font-size: 2.5rem;
-    color: #000;
-}
-.portfolio .box-container .box1 .overflo{
-    position: absolute;
-    top: 1rem; right: 1rem;
-}
-.portfolio .box-container .box1 .overflo a{
-    display: block;
-    height: 4rem;
-    width: 4rem;
-    border-radius: .5rem;
-    background: rgb(171, 213, 245);
-    color: #333;
-    font-size: 1.7rem;
-    line-height: 4rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.portfolio .box-container .box1 .overflo a:hover{
-    background: #fff;
-    color: #20b2aa;
-}
-
 
 
 .review{
