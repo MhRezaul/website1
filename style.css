@@ -352,7 +352,7 @@ header .navbar a:hover{
     height: 35rem;
 }
 .portfolio .box-container .box2 img{
-    height: 90%;
+    height: 70%;
     width: 100%;
     transition: transform .5s;
     border: .5rem solid #fff;
