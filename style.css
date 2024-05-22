@@ -349,7 +349,7 @@ header .navbar a:hover{
 .portfolio .box-container .box2{
     display: inline-block;
     flex: 1 1 20rem;
-    height: 25rem;
+    height: 30rem;
 }
 .portfolio .box-container .box2 img{
     height: 100%;
