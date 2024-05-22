@@ -349,10 +349,10 @@ header .navbar a:hover{
 .portfolio .box-container .box2{
     display: inline-block;
     flex: 1 1 20rem;
-    height: 35rem;
+    height: 25rem;
 }
 .portfolio .box-container .box2 img{
-    height: 70%;
+    height: 100%;
     width: 100%;
     transition: transform .5s;
     border: .5rem solid #fff;
