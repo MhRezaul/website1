@@ -170,10 +170,10 @@ header .navbar a:hover{
     border-radius: .5rem;
 }
 .tab-contents{
-    display: ;
+    display: none;
 }
 .tab-contents.active-tab{
-    display: block;
+    display: ;
 }
 .tab-contents h3{
     margin-top: 20px;
