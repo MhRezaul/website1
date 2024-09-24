@@ -173,7 +173,7 @@ header .navbar a:hover{
     display: none;
 }
 .tab-contents.active-tab{
-    display: ;
+    display: block;
 }
 .tab-contents h3{
     margin-top: 20px;
