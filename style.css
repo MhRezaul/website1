@@ -170,7 +170,7 @@ header .navbar a:hover{
     border-radius: .5rem;
 }
 .tab-contents{
-    display: none;
+    display: ;
 }
 .tab-contents.active-tab{
     display: block;
