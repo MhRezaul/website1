@@ -77,7 +77,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(photo/Profile.jpg);
-    padding: 2rem 9%;
+    padding: 1.5rem 9%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
@@ -99,7 +99,6 @@ header .logo span{
 header .navbar a{
     font-size: 1.5rem;
     margin-left: 2rem;
-    top:-5%;
     color: #fff;
     text-transform: capitalize;
 }
