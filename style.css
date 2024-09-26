@@ -97,7 +97,7 @@ header .logo img{
 }
 
 header .logo p{
-    padding-top: -3rem;
+    margin-top: -3rem;
 }
 header .logo span{
     color: #20b2aa;
