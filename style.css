@@ -90,7 +90,7 @@ header .logo{
 header .logo img{
     height: 7%;
     width: 7%;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     margin-top: -1rem;
 }
 
@@ -100,8 +100,8 @@ header .logo span{
 
 header .navbar a{
     font-size: 1.5rem;
-    margin-left: 1.5rem;
-    margin-top: -1rem;
+    margin-left: 1rem;
+    margin-top: -3rem;
     color: #fff;
     text-transform: capitalize;
 }
