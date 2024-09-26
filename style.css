@@ -87,6 +87,11 @@ header .logo{
     color: white;
 }
 
+header .logo .img{
+    height: 10%;
+    width: 10%;
+}
+
 header .logo span{
     color: #20b2aa;
 }
