@@ -390,48 +390,43 @@ header .navbar a:hover{
 }
 
 
-.review{
-    background: #000;
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
-.cta-box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    grid-gap: 2rem;
-    align-items: center;
-    margin-top: 5rem;
+.review .box-container .box{
     text-align: center;
+    padding: 2rem;
+    border: .1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    flex: 1;
+    background: #333;
+    margin-top: 6rem;
 }
-.wrap{
-    background: #fff;
-    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
-    border-radius: 12px;
-    padding: 50px 50px 50px 50px;
-    transition: ease .40s;
-    cursor: pointer;
+.review .box-container .box img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 1rem solid #fff;
+    margin-top: -8rem;
+    object-fit: cover;
 }
-.one{
-    background: #baebcd;
+.review .box-container .box h3{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
 }
-.two{
-    background: #d9d1fa;
+.review .box-container .box .stars i{
+    font-size: 2rem;
+    color: gold;
+    padding: .5rem 0;
 }
-.three{
-    background: #faedce;
-}
-
-}
-.4{
-    background: #baebcd;
-}
-
-.wrap h3{
-    color: #20b2aa;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 2px;
-}
-.wrap p{
-    font-size: 18px;
+.review .box-container .box p{
+    font-size: 1rem;
+    color: #eee;
+    padding: 1rem 0;
 }
 
 
