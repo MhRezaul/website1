@@ -76,8 +76,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(photo/Profile.jpg);
-    padding: 1.5rem 9%;
+    background: #fff;
+    padding: 2rem 9%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
