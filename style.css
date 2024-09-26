@@ -96,6 +96,9 @@ header .logo img{
     margin-top: 1rem;
 }
 
+header .logo p{
+    padding-top: -3rem;
+
 header .logo span{
     color: #20b2aa;
 }
