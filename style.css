@@ -77,7 +77,9 @@ header{
     align-items: center;
     justify-content: space-between;
     background: black;
-    padding: -1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
