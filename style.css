@@ -93,12 +93,12 @@ header .logo img{
     height: 15%;
     width: 15%;
     margin-left: 1rem;
-    margin-top: -5rem;
+    margin-top: -1rem;
 }
 
 header .logo p{
-    margin-top: -5rem;
-    margin-left: 4rem;
+    margin-top: -1rem;
+    margin-left: 10rem;
 }
 header .logo span{
     color: #20b2aa;
