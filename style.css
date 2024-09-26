@@ -87,9 +87,9 @@ header .logo{
     color: white;
 }
 
-header .logo .img{
-    height: 10%;
-    width: 10%;
+header .img{
+    height: 1rem;
+    width: 1rem;
 }
 
 header .logo span{
