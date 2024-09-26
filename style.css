@@ -391,6 +391,7 @@ header .navbar a:hover{
 
 
 .review .box-container{
+    background: Black;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
