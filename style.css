@@ -410,10 +410,14 @@ header .navbar a:hover{
     gap: 1rem;
 }
 .Projects .box-container .box1{
-    display: inline-block;
-    flex: 1 1 30rem;
     height: 300px;
     width: 582px;
+    flex: 1 1 30rem;
+    border: 1remsolid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
 }
 .Projects .box-container .box1 img{
     height: 100%;
