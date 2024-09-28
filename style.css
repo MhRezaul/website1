@@ -398,7 +398,6 @@ header .navbar a:hover{
 .portfolio .box-container .box:hover img{
     cursor: pointer;
     transform: scale(0.9);
-    top: 0;
 }
 
 
