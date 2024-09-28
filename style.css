@@ -375,6 +375,7 @@ header .navbar a:hover{
     transition: transform .5s;
     border: .5rem solid #fff;
     border-radius: .5rem;
+    object-fit: cover;
 }
 .portfolio .box-container .box2 .content{
     position: absolute;
