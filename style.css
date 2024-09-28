@@ -410,8 +410,8 @@ header .navbar a:hover{
     gap: 1rem;
 }
 .Projects .box-container .box1{
-    height: 290px;
-    width: 525px;
+    height: 280px;
+    width: 500px;
     border: 1remsolid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
