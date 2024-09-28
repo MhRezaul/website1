@@ -361,7 +361,8 @@ header .navbar a:hover{
     gap: 1.5rem;
 }
 .portfolio .box-container .box2{
-    height: 25rem;
+    height: 430px;
+    width: 712px
     flex: 1 1 30rem;
     border: 1remsolid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -370,8 +371,8 @@ header .navbar a:hover{
     overflow: hidden;
 }
 .portfolio .box-container .box2 img{
-    width: 1280pixels;
-    height: 769pixels;
+    width: 712px;
+    height: 430px;
     object-fit: cover;
     border: .5rem solid #fff;
     border-radius: .5rem;
