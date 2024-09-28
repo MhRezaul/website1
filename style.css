@@ -370,8 +370,8 @@ header .navbar a:hover{
     overflow: hidden;
 }
 .portfolio .box-container .box2 img{
-    width: 100%;
-    height: 100%;
+    width: 1280pixels;
+    height: 769pixels;
     object-fit: cover;
     border: .5rem solid #fff;
     border-radius: .5rem;
