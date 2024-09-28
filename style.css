@@ -412,7 +412,6 @@ header .navbar a:hover{
 .Projects .box-container .box1{
     height: 270px;
     width: 712px;
-    flex: 1 1 30rem;
     border: 1remsolid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
