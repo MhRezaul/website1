@@ -425,6 +425,7 @@ header .navbar a:hover{
     transition: transform .5s;
     border: .5rem solid #fff;
     border-radius: .5rem;
+    object-fit: cover;
 }
 .Projects .box-container .box1:hover img{
     cursor: pointer;
