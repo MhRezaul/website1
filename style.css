@@ -361,8 +361,8 @@ header .navbar a:hover{
     gap: 1.5rem;
 }
 .portfolio .box-container .box2{
-    height: 330px;
-    width: 612px
+    height: 300px;
+    width: 582px
     flex: 1 1 30rem;
     border: 1remsolid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
