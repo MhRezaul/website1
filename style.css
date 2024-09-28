@@ -362,7 +362,7 @@ header .navbar a:hover{
 }
 .portfolio .box-container .box2{
     height: 300px;
-    width: 582px
+    width: 582px;
     flex: 1 1 30rem;
     border: 1remsolid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -412,6 +412,8 @@ header .navbar a:hover{
 .Projects .box-container .box1{
     display: inline-block;
     flex: 1 1 30rem;
+    height: 300px;
+    width: 582px;
 }
 .Projects .box-container .box1 img{
     height: 100%;
