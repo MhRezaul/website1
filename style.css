@@ -410,7 +410,7 @@ header .navbar a:hover{
     gap: 1rem;
 }
 .Projects .box-container .box1{
-    height: 300px;
+    height: 270px;
     width: 712px;
     flex: 1 1 30rem;
     border: 1remsolid #fff;
