@@ -395,7 +395,7 @@ header .navbar a:hover{
     color: #666;
     padding: 1rem 0;
 }
-.portfolio .box-container .box2:hover content{
+.portfolio .box-container .box:hover img{
     cursor: pointer;
     transform: scale(0.9);
     top: 0;
@@ -421,7 +421,9 @@ header .navbar a:hover{
     border: .5rem solid #fff;
     border-radius: .5rem;
 }
-.portfolio .box-container .box1:hover img{
+.portfolio .box-container .box:hover img{
+    cursor: pointer;
+    transform: scale(0.9);
     top: 0;
 }
 
