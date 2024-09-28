@@ -377,6 +377,28 @@ header .navbar a:hover{
     transform: scale(0.9);
 }
 
+.portfolio .box-container .box2 .content{
+    position: absolute;
+    top: -100%; left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(225,255,255,.9);
+    padding: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+.portfolio .box-container .box2 .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.portfolio .box-container .box2 .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.portfolio .box-container .box2:hover .content{
+    top: 0;
+}
 
 
 .portfolio{
