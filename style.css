@@ -411,7 +411,7 @@ header .navbar a:hover{
 }
 .Projects .box-container .box1{
     height: 300px;
-    width: 600px;
+    width: 712px;
     flex: 1 1 30rem;
     border: 1remsolid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -425,7 +425,6 @@ header .navbar a:hover{
     transition: transform .5s;
     border: .5rem solid #fff;
     border-radius: .5rem;
-    object-fit: cover;
 }
 .Projects .box-container .box1:hover img{
     cursor: pointer;
