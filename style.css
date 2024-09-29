@@ -21,7 +21,7 @@ html{
     scroll-padding-top: 6rem;
 }
 body{
-    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(photo/Profile.jpg);
+    background: url(photo/Profile.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
