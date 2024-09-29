@@ -431,8 +431,10 @@ header .navbar a:hover{
 }
 
 
-
 .services{
+    background: #000;
+}
+.services .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
