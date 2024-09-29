@@ -431,23 +431,23 @@ header .navbar a:hover{
 }
 
 
-.steps{
+.services{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 1rem;
 }
-.steps .box{
+.services .box{
     flex: 1;
     text-align: center;
 }
-.steps .box img{
+.services .box img{
     width: 150px;
     border-radius: 50%;
     border: 1rem solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
-.steps .box h3{
+.services .box h3{
     font-size: 2rem;
     color: #333;
     padding: 1rem;
