@@ -491,6 +491,11 @@ header .navbar a:hover{
     color: #fff;
     padding: .5rem 0;
 }
+.review .box-container .box h4{
+    font-size: 1rem;
+    color: #fff;
+    padding: .5rem 0;
+}
 .review .box-container .box .stars i{
     font-size: 2rem;
     color: gold;
