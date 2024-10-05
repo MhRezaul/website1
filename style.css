@@ -159,6 +159,10 @@ header .navbar a:hover{
     color: #666;
     padding: 1rem 0;
 }
+.home .image img{
+    width: 100%;
+    padding: .5rem;
+}
 
 .about{
     margin: auto;
