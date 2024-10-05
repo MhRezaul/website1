@@ -277,86 +277,9 @@ header .navbar a:hover{
     color: #fff;
     font-size: 15px;
 }
-.tab-contents:hover{
-    box-shadow: 0 0 20px 0;
-}
-.tab-contents li{
-    list-style: none;
-    font-size: 12px;
-    font-weight: bold;
-}
-.tab-contents .bar{
-    display: block;
-    height: 3px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    overflow: hidden;
-}
-.tab-contents .bar span{
-        height: 20px;
-        float: left;
-        background: #20b2aa;
-}
-.html{
-    width: 90%;
-    animation: html 2s;
-}
-.css{
-    width: 85%;
-    animation: css 2s;
-}
-.javascript{
-    width: 60%;
-    animation: javascript 2s;
-}
-.Photoshop-Illustrator{
-    width: 60%;
-    animation: Photoshop-Illustrator 2s;
-}
-.jquery{
-    width: 75%;
-    animation: jquery 2s;
-}
-@keyframes html {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-@keyframes css {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 85%;
-    }
-}
-@keyframes javascript {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
-    }
-}
-@keyframes Photoshop-Illustrator {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
-    }
-}
-@keyframes jquery {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 75%;
-    }
-}
+
+
+
 
 
 
