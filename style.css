@@ -541,6 +541,14 @@ header .navbar a:hover{
     }
 }
 
+
+@media(max-width:991px){
+    .home{
+        width: 100%;
+    }
+}
+
+
 @media(max-width:768px){
     #menu-bar{
         display: initial;
