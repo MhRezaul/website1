@@ -159,10 +159,16 @@ header .navbar a:hover{
     color: #666;
     padding: 1rem 0;
 }
+
+.home .image{
+    flex: 1 1 40rem;
+}
 .home .image img{
     width: 100%;
     padding: .5rem;
 }
+
+
 
 .about{
     margin: auto;
