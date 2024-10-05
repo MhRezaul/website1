@@ -164,12 +164,12 @@ header .navbar a:hover{
     flex: 1 1 40rem;
 }
 .home .image img{
-    width: 50%;
-    height:50%;
+    width: 100%;
     padding: .5rem;
     shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border: .1rem solid rgba(0, 0, 0, .3);
     border-radius: .5rem;
+    background:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), 
 }
 
 
